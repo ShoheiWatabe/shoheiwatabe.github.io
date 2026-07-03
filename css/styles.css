@@ -1,0 +1,1907 @@
+
+
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	  scroll-behavior:smooth;
+}
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+
+header {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+background-color: transparent;
+	font-family:Roboto;
+}
+
+
+img {
+	width: 100vw;
+	max-width: 100vw;
+	height: auto;
+	vertical-align: middle;
+}
+
+footer {
+	padding-top: 20px;
+	padding-bottom: 1px;
+	background-color: rgba(45,45,53,1.00);
+	font-family:Roboto;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background: #e6f4f8;
+    font-family: arial, sans-serif;
+ 	background-image: -webkit-linear-gradient(top left, rgba(244,244,244,1.00) 0vw, rgb(204,204,204) 100vw);
+	background-image: -o-linear-gradient(top left, rgba(244,244,244,1.00) 0%, rgb(204,204,204) 100%);
+	background-image: linear-gradient(to bottom right, rgba(244,244,244,1.00) 0vw, rgb(204,204,204) 100vw);
+	background: rgba(244,244,244,1.00);
+	background-color: rgba(45,45,53,1.00);
+	background-color: white;
+	width:100vw;
+}
+
+
+
+	
+/* TOPに戻る */
+/* TOPに戻る */
+#topbutton {
+   /* ▼ボタンの表示位置を画面の右下に固定 */
+   position: fixed; /* ←表示場所を固定 */
+	
+   width: 50px;     /* ←横幅 */ 
+   border-radius: 30px;
+   /* ▼最初は非表示にしておく */
+   display: none;
+
+   /* ▼配色・配置・文字の装飾など */
+    /*	background-color: #2525aa; /* ←背景色 */
+   /*background-color: #2D2D35;*/ 
+	
+   opacity: 0.65;        /* ←透明度 */
+
+   text-align: center;  /* ←文字の位置 */
+   font-size: 50px;     /* ←文字サイズ */
+   font-weight: bold;   /* ←文字の太さ */
+   margin: 0px;          /* ←外側の余白 */
+   padding: 10px;       /* ←内側の余白 */
+   bottom: 20px;   /* ←下端からの距離 */
+   right: 50px;    /* ←右端からの距離 */ 
+}
+#topbutton a {
+   /* ▼リンクの装飾 */
+   color: white;          /* ←文字色 */
+   text-decoration: none; /* ←下線なし */
+	transition:color .2s linear;
+   color: grey
+}
+#topbutton a:hover {
+   /* ▼マウスが載ったときの装飾 */
+   color: #ff8b3d;              /* ←文字色 */
+   text-decoration: none; /* ←下線あり */
+}　
+#topbutton a {
+   /* ▼リンクの装飾 */
+   color: white;          /* ←文字色 */
+   text-decoration: none; /* ←下線なし */
+	transition:color .2s linear;
+}
+#topbutton a:hover {
+   /* ▼マウスが載ったときの装飾 */
+   color: #ff8b3d;              /* ←文字色 */
+   text-decoration: none; /* ←下線あり */
+}
+/* TOPに戻る */
+/* TOPに戻る */
+
+
+
+.slide-img img{
+  display: block;
+}
+
+.style-logo  {text-align:center;margin:auto;display:table;} 
+.style-logo1 {width: 79px;margin-bottom: 1em;margin-right:1em;float:left;}
+.style-logo2 {width: 79px;margin-bottom: 1em;}
+
+.style-flag { 
+	align: center;
+	width: 2em;
+}
+
+.style-flag-gainsboro { 
+	display:none;
+}
+.style-flag-black { 
+	display:block;
+}
+
+.col .style-nav ul p { 
+	float:left;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+}
+
+.style-nav ul {
+	list-style-type: none;
+}
+
+.style-nav ul li a {
+	text-decoration: none;
+	color: #2F322A; 
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	font-family:Roboto;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.lang_switch{
+	text-align: center;
+	display: block; 
+	padding: 8px;
+	font-family:Roboto;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+#g_navi li a {
+    position: relative;
+    padding: 0px 12px;
+    font-size: 18px;
+    text-align: center; 
+    transition: .5s;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+	font-family:Roboto;
+}
+#g_navi li.active a,
+#g_navi li a:hover {
+    text-decoration: none;
+}
+
+#g_navi li.lang_switch {
+	margin-left: 15px;
+	font-family:Roboto;
+}
+#g_navi li.lang_switch a {
+	display: inline-block;
+    background: #b9b9b9;
+    color: #fff;
+    font-family:Roboto;
+}
+#g_navi li.lang_switch a:hover,
+#g_navi li.lang_switch a.active {
+    background: #333;
+}
+
+
+
+
+
+.site-header{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+	  margin-top:0px;
+    height:85px;
+}
+.header-change{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 73px;
+    position: fixed;
+    top: -73px;
+    transition:1s;
+    width: 100%;
+	background:white;
+	background: rgba(244,244,244,1.00);
+    color: rgba(244,244,244,1.00);
+	margin-bottom:-20px;
+	background-color: white;
+}
+.header-change.show{
+    top: 20px;
+}
+.header-change .gnav__menu__item a{
+    color: white; 
+    text-decoration: none;
+}
+
+.header-change .style-nav ul li a { 
+	color: #2F322A;  
+}
+
+
+
+
+
+
+.hero {
+  position: relative; 
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* video */
+
+.video-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; 
+  z-index: 100;
+  object-fit: cover;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.video-box .post-slide{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; 
+  z-index: 100;
+  object-fit: cover;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  margin-top:-18px;
+}
+
+
+/* overlay */
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.0);
+
+}
+
+/* text */
+.text-box img{
+
+  position: absolute;  
+  text-align: center;
+	 
+  z-index: 1;  
+  top: 50%;
+  left:5%;
+  width: 90%;
+
+	
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+    transform: translateY(0px);
+}
+
+
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(70px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+
+
+
+h1 {
+	font-size: 57px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 60px;
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 23px;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 120px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 35px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+.button{
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size:14px;font-weight:700;text-transform:uppercase;position:relative;transition:color .2s linear}
+.button:hover{text-decoration:none;color:#ff8b3d}
+.button:hover:after{width:100%} 
+
+.buttonblue{
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size:14px;font-weight:700;text-transform:uppercase;position:relative;transition:color .6s linear}
+.buttonblue:hover{text-decoration:none;color:#0C18C6}
+.buttonblue:hover:after{width:100%} 
+
+
+.info-box-tan {
+	background-color: #b9a88e;
+	color: #FFFFFF;
+	padding: 30px 20px 60px;
+	text-align: center; 
+}
+
+.info-box-dark {
+	background-color: #2D2D35;
+	color: #FFFFFF;
+	padding: 30px 20px 60px;
+	text-align: center; 
+}
+
+.footer-text {
+	font-size: 13px;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+	text-align:center;
+	font-family:Roboto;
+	text-decolation:none;
+}
+
+.footer-info{font-size: 15px;margin-top: 20px;margin-bottom: 20px;color: #FFFFFF;text-align:center;	font-family:Roboto;}
+
+.col {
+	width: 100%;
+	padding-bottom:1em;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+ 
+
+/******************  publication *******************/
+.TitleContent {
+font-size:2em;
+text-align:center;
+color:white;
+margin:0.5em;
+font-weight:500;
+letter-spacing:1.5px;
+font-family:Roboto;
+color:rgba(45,45,53,1.00);
+margin-bottom:40px;
+margin-top:60px;
+}
+
+/******************  publication *******************/
+
+
+.publicationlist ul, ol {
+  background: transparent;/*背景色*/
+  padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
+  font-size:1em;
+	color:white;
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	text-decoration:none;
+}
+
+.publicationlist ul li a, ol li a {
+  line-height: 1.5; /*文の行高*/
+  font-size:1em;
+  padding: 0.5em 0; /*前後の文との余白*/
+	color:white;
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	text-decoration:none;
+}
+
+.number{
+	vertical-align: center;
+	text-align:left;
+	font-size: 13px;
+}
+
+.title{	/* Publication title */
+	text-decoration: none;
+	font-size: 16px;
+	color: rgb(78,138,213);
+    margin-bottom: 0;
+    margin-top: 0; 
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.author{
+	font-size: 15px;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight:300; 
+    margin-bottom: 2px;
+    color:#555;
+}
+.reference{	/* Style for bibliographic information */
+	font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight:300;
+    color:#555;
+} 
+
+.select{	/* Style for bibliographic information */
+	font-size: 15px;
+    font-family: Roberot;
+	font-style: italic;
+    font-weight:300;
+    color:#ff8b3d;
+} 
+
+.bibtex{	
+	text-decoration: none;
+	font-size: 14px;
+	color: rgb(127,127,127);
+}
+.bibtexin{	
+	text-decoration: none;
+	font-size: 16px;
+	color: rgb(78,138,213);
+    margin-bottom: 0;
+    margin-top: 0;  
+	font-family:Roboto;
+	text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.arXiv{	/* Link to BibTeX modal window */
+	text-decoration: none;
+	font-size: 14px;
+	color: rgb(127,127,127);
+}
+
+
+
+@media (max-width: 768px) {/* PCのときはページの真ん中の600x600領域 */
+.publicationlist ul, ol {   font-size:12px; }
+.publicationlist ul li a, ol li a {  font-size:12px;  }
+.number{  font-size:12px; }
+.title{	/* Publication title */  font-size:12px; }
+.author{  font-size:12px; }
+.reference{	/* Style for bibliographic information */  font-size:12px; } 
+.select{	/* Style for bibliographic information */  font-size:12px; } 
+.bibtex{	  font-size:12px; } 
+.arXiv{	/* Link to BibTeX modal window */  font-size:12px; }
+.abstract_checked{	font-size: 12px;}
+.abstract_checked .abstract_appear p{	font-size: 12px;}
+.abstract_checked input:checked ~ .abstract_appear {font-size: 12px;}
+}
+
+
+
+
+
+
+.abstract {
+    position:relative;
+    max-width:768px;　
+}
+.abstractplus {
+ 	color: rgb(78,138,213);
+    overflow:visible;
+}
+
+.abstract_checked input {
+    display: none;
+}
+
+.abstract_checked .abstract_appear {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.abstract_checked .abstract_appear p{
+	font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	color:rgba(45,45,53,1.00);
+    color:#555;
+}
+
+.abstract_checked input:checked ~ .abstract_appear {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+	font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight:300;
+    color:#555;
+	width:100%;
+}
+
+
+.abstract_checked .abstractplus {
+ 	color: rgb(78,138,213);
+    overflow:visible;
+}
+
+
+.abstract_checked .abstractplus:before{
+    content: '\f067'; 
+	font-size: 10px;
+    display: inline;
+    font-family: "Font Awesome 5 Free";
+ 	color: rgb(78,138,213);
+	margin-top:-1em;
+}
+
+
+.abstract_checked .abstractplus:hover {
+ 	color: rgb(175,0,0);
+    overflow:visible;
+}
+.abstract_checked .abstractplus:hover:before{
+ 	color: rgb(175,0,0);
+    overflow:visible;
+}
+
+.abstract_checked input:checked + .abstractplus {
+ 	color: rgb(175,0,0);
+    overflow:visible;
+}
+.abstract_checked input:checked + .abstractplus:before{
+    content: '\f068';
+ 	color: rgb(175,0,0);
+    font-family: "Font Awesome 5 Free";
+	width:3em;
+}
+
+
+
+
+
+
+
+.popupModal1 > input { /* ラジオボックス非表示 */
+    display: none;
+}
+.popupModal1 > input:nth-child(1) + label { 
+    cursor: pointer;
+}
+.modalPopup2 { /* 初期設定 ポップアップ非表示 */
+    display: none;
+}
+
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label + .modalPopup2 {/* ラジオ１ チェックでポップアップ表示 */
+    display: block;
+    z-index: 998;
+    position: fixed;
+    width: 50%;
+    height: 70%;
+    border-radius: 15px;
+    left: 50%;
+    top: 50%;
+    margin-top: 0px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 10px 20px;
+    overflow: hidden;
+    width: 95%;
+}
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label {
+     left: 1.5% !important;
+     top: 90.1% !important;
+     margin-left: 0px !important;
+     margin-top: 0px !important;
+}
+
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label {
+     left: 3% !important;
+     top: 80.3% !important;
+     margin-left: 0px !important;
+     margin-top: 0px !important;
+	 opacity:60%;
+}
+
+@media (min-width: 768px) {/* PCのときはページの真ん中の600x600領域 */
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label + .modalPopup2{
+         width: 600px;
+         height: 600px;
+         padding: 30px;
+         margin-top: 30px;
+    }
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label {
+     left: 50% !important;
+     top: 50% !important;
+     margin-left: 260px !important;
+     margin-top: -305px !important;
+}
+}
+
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label + .modalPopup2 > div {/* */
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label + .modalPopup2 > div > iframe {
+    width: 100%;
+      height:100%;
+      border:none;
+      display:block;
+}
+
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label + .modalPopup2 > div > img {/* ポップアップの中の要素 */
+max-width: 100%;
+}
+.popupModal1 > input:nth-child(1) + label ~ label {
+    display: none;/* ラジオ１ 以外のラベルを初期は非表示 */
+
+}
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 997;
+    text-indent: -999999px;
+    overflow: hidden;
+
+}
+.popupModal1 > input:nth-child(1):checked + label + input:nth-child(3) + label + input:nth-child(5) + label {
+    background: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    display: inline-block;
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    z-index: 999;
+    width: 44pt;
+    height: 44pt;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 95pt;
+    text-align: center;  
+}
+
+.popupModal1 > input:nth-child(1) + label + input:nth-child(3):checked + label + input:nth-child(5) + label + .modalPopup2,
+.popupModal1 > input:nth-child(1) + label + input:nth-child(3) + label + input:nth-child(5):checked + label + .modalPopup2 { /* ラジオ２と３ どっちかチェックでポップアップ非表示 */
+    display: none;
+}
+
+
+.modalPopup2 {
+    animation: fadeIn 1s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.popupModal1 .modalTitle {
+     padding-bottom: .5em;
+     margin: .5em 0;
+     border-bottom:
+     0.1px solid #ccc;
+	text-transform:none; 
+}
+.popupModal1 .modalMain {
+     color:#222;
+     text-align: left;
+     font-size: 14px;
+     line-height: 1.8em;
+	align:left;
+	min-width: 100%;
+	min-height:100%;
+}
+.popupModal1 .modalMain textarea{
+	align:left;
+	min-width: 100%;
+	height:100%;
+ 	background-image: -webkit-linear-gradient(top left, rgba(244,244,244,1.00) 0vw, rgb(204,204,204) 100vw);
+	background-image: -o-linear-gradient(top left, rgba(244,244,244,1.00) 0%, rgb(204,204,204) 100%);
+	background-image: linear-gradient(to bottom right, rgba(244,244,244,1.00) 0vw, rgb(204,204,204) 100vw);
+	font-size:13px;
+}
+
+
+
+
+
+/******************  teaching *******************/
+
+.teachingclass { 
+	text-decoration: none;
+	text-align: left;
+	margin-left:15px;
+}
+.teachingyear {
+	text-decoration: none;
+    line-height: 1.5; /*文の行高*/
+    font-size:1.2em;
+	color:rgba(45,45,53,1.00);
+    margin-bottom: 0;
+    margin-top: 0;  
+	font-family:Roboto;
+	text-align: left;
+}
+
+.teachingclass_checked input {
+    display: none;
+}
+
+.teachingclass_checked .teachingclass_appear {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.teachingclass_checked input:checked ~ .teachingclass_appear {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+	font-size: 15px;
+	font-family:Roboto;
+    font-weight:300;
+    color:#555;
+	width:100%;
+
+}
+
+.teachingclass_checked .teachingyear:before{
+    content: '\f067';
+	font-size: 20px;
+    display: inline;
+    font-family: "Font Awesome 5 Free";
+	padding:0;
+	margin:0;
+}
+
+.teachingclass_checked .teachingyear:hover{
+    color: rgb(175,0,0); 
+}
+.teachingclass_checked .teachingyear:before:hover{
+    color: rgb(175,0,0); 
+}
+
+.teachingclass_checked input:checked + .teachingyear{
+    color: rgb(175,0,0); 
+}
+
+.teachingclass_checked input:checked + .teachingyear:before{
+    content: '\f068';
+    color: rgb(175,0,0); 
+}
+
+
+
+
+
+ 
+
+
+
+
+.teaching_content{	/* Publication title */ 
+	font-size: 14px;
+	color: rgb(78,138,213);
+    margin-bottom: 0;
+    margin-top: 0;  
+	font-family:Roboto; 
+	text-align: left; 
+	margin-left:18px
+}
+
+.teaching_content ul li{	/* Publication title */ 
+	font-size: 11px;
+	font-family:Roboto;
+	color:rgba(45,45,53,1.00);
+	text-align: left; 
+	margin-left:0px
+}
+
+.teaching_content .modalTitle{  
+	font-size: 16px;
+	color:rgba(45,45,53,1.00);
+	color:grey;
+    margin-bottom: 0;
+    margin-top: 0;  
+	font-family:Roboto;
+	text-align: center;
+}
+
+.teaching_content .modalMain{
+    margin-top: 19px;
+	color: rgb(78,138,213);
+	color:rgba(45,45,53,1.00);
+}
+
+.teaching_content ul {
+  padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
+  font-size:1em;
+	color:white;
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+    text-align:center;
+    display: inline-block;
+    padding-left: 0;
+    text-align: left;
+    text-align: left; margin-left: auto; margin-right: auto;
+}
+
+
+.teaching_content ul li a{
+  line-height: 1.5; /*文の行高*/
+  font-size:1em;
+  padding: 0.5em 0; /*前後の文との余白*/
+	color:white;
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	color: rgb(78,138,213);
+} 
+
+.popupModal1 .modalMain ul{
+	margin-top:10px;
+	font-family:Roboto;
+}
+
+.popupModal1 .modalMain ul li{
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto; 
+	display: list-item;
+	list-style-type:disc;
+	font-size:1em;
+     border-top:
+     1px solid #ccc;
+}
+
+
+.teaching_content .read-more{
+	position:relative;transition:color .2s linear}
+.teaching_content .read-more:hover{text-decoration:none;color:#ff8b3d}
+.teaching_content .read-more:hover:after{width:100%} 
+
+
+.image-group {
+  width: 50%;
+  height: auto;
+  text-align:center;
+  align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************** CV  *******************/
+
+
+.CV_content_title {
+	text-decoration: none;
+	font-size: 17px;
+	color:rgba(45,45,53,1.00);
+    margin-bottom: 0;
+    margin-top: 0;  
+	font-family:Roboto;
+	margin-left:60px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+	margin-top:30px;
+	width:90%;
+	margin-left:30px;
+}
+
+
+.CV_content_title ul, ul li{
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;  
+}
+
+.CV_content_table{
+	margin-top:0px;
+	margin-bottom:0pRx;
+}
+
+@media (max-width: 768px) {/* PCのときはページの真ん中の600x600領域 */
+.CV_content_table tr td{
+　　border-bottom: none;
+    display: block;
+    width: 100%; 
+}
+	.CV_content_table tr{
+	margin-top:3em;
+}
+
+.CV_content_table span, tr td, tr td span, tr td p{
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	font-size: 10px;
+	margin:0;
+}
+.CV_content_title span{
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	font-size: 10px;
+}
+}
+
+.bg_test-text {
+  display:  inline-block;                         /* インラインブロックにする */
+  padding: 10px 20px;                             /* 余白指定 */
+}
+.bg_test {
+  text-align:  left;    /* 文字中央寄せ */
+  /* padding:  150px;         余白指定 */
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.imageResearch {
+	margin-right: calc(50% - 50vw);
+	margin-left:  calc(50% - 50vw);
+}
+
+.imageResearch img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+
+/******************  News Slider *******************/ 
+.newsslider {font-size:2em;text-align:center;color:white;margin:0.5em;  color:rgba(45,45,53,1.00);margin-top:140px;}
+.post-slide{margin:0 15px;position:relative;background:#fff;/*box-shadow:0 1px 2px rgba(43,59,93,.3);*/margin-bottom:2em;}
+.post-slide .post-img{position:relative;overflow:hidden}
+.post-slide .post-img img{hight:100%;width:100%;auto-webkit-transition: all 0.3s linear 0s; transition: all 0.3s linear 0s}
+.post-slide:hover .post-img img {-webkit-transform: scale(1.1);transform: scale(1.1);opacity: 0.6;}
+.post-slide .over-layer{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;background:rgba(0,0,0,.6);transition:all .3s ease}
+.post-slide:hover .over-layer{opacity:1}
+.post-slide .post-link{margin:0;padding:0;position:relative;top:45%;text-align:center}
+.post-slide .post-link li{display:inline-block;list-style:none;margin-right:20px}
+.post-slide .post-link li a{color:#fff;font-size:20px}
+.post-slide .post-link li a:hover{color:#ff8b3d;text-decoration:none}
+.post-slide .post-date{position:absolute;top:10%;left:4%}
+.post-slide .date{display:inline-block;border-radius:3px 0 0 3px;padding:5px 10px;color:#fff;font-size:20px;font-weight:700;text-align:center;background:#333;float:left}
+.post-slide .month{display:inline-block;border-radius:0 3px 3px 0;padding:5px 13px;color:#111;font-size:20px;font-weight:700;background:#ff8b3d}
+
+.post-slide .post-content{padding:20px}
+.post-slide .post-content:hover{padding:20px}
+
+.post-slide .post-description{font-size:14px;line-height:24px;color:grey;margin-top:10px;font-family:Roboto;}
+.post-slide .read-more{color:#333;font-size:14px;font-weight:700;text-transform:uppercase;position:relative;transition:color .2s linear}
+.post-slide .read-more:hover{text-decoration:none;color:#ff8b3d}
+.post-slide .read-more:after{content:"";position:absolute;width:30%;display:block;border:1px solid #ff8b3d;transition:all .3s ease}
+.post-slide .read-more:hover:after{width:100%}
+
+.post-slide .read-more2{color:#333;font-size:20px;line-height:24px;font-weight:500;text-transform:none;position:relative;transition:color .2s linear;}
+.post-slide .read-more2:hover{text-decoration:none;color:#ff8b3d}
+.post-slide .read-more2:after{content:"";position:absolute;width:18px;display:block;border:1px solid #ff8b3d;transition:all .3s ease;font-size:18px;}
+.post-slide .read-more2:hover:after{width:90%}
+
+@media only screen and (max-width:479px){.post-slide .month{font-size:14px} .post-slide .date{font-size:14px}}
+
+@media (max-width: 768px) {/* PCのときはページの真ん中の600x600領域 */
+.post-slide .post-description{font-size:12px;line-height:22px;color:grey;margin-top:10px;font-family:Roboto;}
+}
+
+
+
+
+
+/******************  map  *******************/
+
+.map { /* ここの名前も適当につける(今回は.mapにしてみました) */
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	font-size:16px;
+	text-align:center;
+	padding:0;
+}
+
+.map-info{
+	font-family:Roboto;
+	font-size:13px;
+	text-align:center;
+	font-weight:100; 
+	height:3em;
+}
+
+
+.map-info span {
+		font-family:Roboto;
+	font-size:13px;
+	text-align:center;
+	font-weight:100; 
+	display: block;
+}
+
+.map-info-br{
+	display:none;
+}
+
+.map-title{
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	font-size:23px;
+	margin-top:50px;
+	margn-bottom:0;
+}
+
+ 
+
+.map-info a{color:grey;font-size:20px;text-decoration:none;}
+.map-info a:hover{color:#ff8b3d;text-decoration:none}
+
+.map-mail{
+	font-family:Roboto;
+	font-size:16px;
+	text-align:left;
+	font-weight:100;
+	text-decolation:none;
+}
+
+.map-image{
+	width:95%;
+	margin-bottom:20px;
+}
+
+.map-google{ /* ここの名前も適当につける(今回は.mapにしてみました) */
+	width: 80%; /* サイズはここで適当に */
+	height: 400px; /* サイズはここで適当に */
+	margin: 0 auto; /* 要素を左右中央に */
+	margin-bottom:40px;
+	margin-top:60px;
+}
+
+/* ここで.mapの枠いっぱいに地図を広げる */
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/******************  image round *******************/
+.image-round1{margin:1em; border-radius: 50%;  hight: 50%;  width: 50%; auto-webkit-transition: all 0.3s linear 0s;transition: all 0.3s linear 0s;}
+.image-round1:hover {border-radius: 60%; -webkit-transform: scale(1.1);transform: scale(1.1);opacity: 0.6;}
+
+.image-round2{margin-top:1.3em; margin-bottom: 3.5em; border-radius: 59%;  hight: 59%;  width: 59%; auto-webkit-transition: all 0.3s linear 0s;transition: all 0.3s linear 0s;}
+.image-round2:hover {border-radius: 50%; -webkit-transform: scale(1.1);transform: scale(1.1);opacity: 0.6;}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************  fadein *******************/
+.fade {opacity: 1;auto-webkit-transition: all 0.1s linear 0s;transition: all 0.1s linear 0s;}
+ 
+
+/******************  member *******************/
+.animate-elm {
+	margin: 0 auto; 
+	width: 100%;
+	height:100%;
+	opacity: 0;
+	float:left;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	overflow:hidden;
+	margin-bottom:10px;
+	padding-bottom:10px
+}
+ 
+
+.animate-elm.type01 {   
+}
+
+.animate-elm.type02 { 
+	-webkit-animation-delay: .2s;
+	        animation-delay: .2s;  
+}
+
+.animate-elm.type03 { 
+	-webkit-animation-delay: .4s;
+	        animation-delay: .4s;  
+}
+.animate-elm.type04 { 
+	-webkit-animation-delay: .6s;
+	        animation-delay: .6s;  
+}
+
+.animate-elm.fadein {
+	-webkit-animation-name: fadeInLeft;
+	        animation-name: fadeInLeft;
+	-webkit-animation-duration: 500ms;
+	        animation-duration: 500ms;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.info-box-member {   
+	display: center;
+	margin:0px;  
+	color: #FFFFFF;
+    width:50%;
+	margin-bottom:1px;  
+}
+ 
+
+.memberp{ 
+	font-family:"MS PMincho";
+}
+
+.post-member{margin:0 15px;position:relative;background:#fff;box-shadow:0 1px 2px rgba(43,59,93,.3);overflow:hidden;}
+.post-member .post-img{position:relative;overflow:hidden}
+.post-member .post-img img{hight:100%;width:100%;auto-webkit-transition: all 0.3s linear 0s; transition: all 0.3s linear 0s}
+.post-member:hover .post-img img {-webkit-transform: scale(1.1);transform: scale(1.1);opacity: 0.6;}
+.post-member .over-layer{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;background:rgba(0,0,0,.6);transition:all .3s ease}
+.post-member:hover .over-layer{opacity:1}
+.post-member .post-link{margin:0;padding:0;position:relative;top:45%;text-align:center}
+.post-member .post-link li{display:inline-block;list-style:none;margin-right:20px}
+.post-member .post-link li a{color:#fff;font-size:20px;text-decoration:none}
+.post-member .post-link li a:hover{color:#ff8b3d;text-decoration:none}
+.post-member .post-date{position:absolute;top:10%;left:4%}
+.post-member .date{display:inline-block;border-radius:3px 0 0 3px;padding:5px 10px;color:#fff;font-size:20px;font-weight:700;text-align:center;background:#333;float:left}
+.post-member .month{display:inline-block;border-radius:0 3px 3px 0;padding:5px 13px;color:#111;font-size:20px;font-weight:700;background:#ff8b3d}
+.post-member .post-content{padding:10px}
+.post-member .post-content:hover{padding:10px}
+.post-member .post-title{margin:0 0 15px 0;text-align:center}
+.post-member .post-title a{font-size:18px;font-weight:700;color:#333;display:inline-block;text-transform:capitalize;transition:all .3s ease 0s}
+.post-member .post-title a:hover{text-decoration:none;color:#ff8b3d}
+.post-member .post-description{font-size:14px;line-height:24px;color:grey;text-align:center;margin-bottom:15px}
+.post-member .read-more{color:#333;font-size:14px;font-weight:700;text-transform:uppercase;position:relative;transition:color .2s linear}
+.post-member .read-more:hover{text-decoration:none;color:#ff8b3d}
+.post-member .read-more:after{content:"";position:absolute;width:30%;display:block;border:1px solid #ff8b3d;transition:all .3s ease}
+.post-member .read-more:hover:after{width:100%} 
+@media only screen and (max-width:479px){.post-member .month{font-size:14px} .post-member .date{font-size:14px}}
+
+.post-member .post-description span {display: block; line-height:10%}
+
+
+
+
+
+
+/* member list */
+
+ul.sample1{
+  padding: 0;
+  font: 14px/1.6 'arial narrow', sans-serif;
+  width:260px;
+  list-style: none;
+  margin-top: 0px;
+  text-align:left;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+ul.sample1 li{
+  position: relative;
+  padding: 0.5em 1em 0.5em 2.3em;
+  margin-bottom:5px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+ul.sample1 li:after,
+ul.sample1 li:before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+ul.sample1 li:before{
+  left: 0.2em;
+  width: 17px;
+  height: 17px;
+  background: grey;
+  opacity:50%;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ul.sample1 li:after{
+  top: 1.1em;
+  left: 0.7em;
+  width: 14px;
+  height: 14px;
+  background: gray;
+  opacity:50%;
+}
+
+.sample1 li a{text-decoration:none;color:#333;font-size:14px;font-weight:700;text-transform:uppercase;position:relative;transition:color .2s linear}
+.sample1 li a:hover{text-decoration:none;color:#ff8b3d}
+
+
+
+/* about */
+.about_content_title {
+	text-decoration: none;
+	font-size: 17px;
+	font-weight:500;
+	font-family:Roboto;
+	color:rgba(45,45,53,1.00);
+    margin-bottom: 0;
+    margin-top: 0;  
+	font-family:Roboto;
+	margin-left:60px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+	margin-top:30px;
+	width:90%;
+	margin-left:30px;
+}
+
+.about_current {
+	text-decoration: none;
+	font-size: 14px;
+	color:rgba(45,45,53,1.00);
+    margin-bottom: 0;
+    margin-top: 0;  
+	font-family:Roboto;
+	margin-left:60px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+	margin-top:0px;
+	width:90%;
+	margin-left:30px;
+}
+
+.about_content_title li span {font-size: 17px; font-weight:500; font-family:Roboto;} 
+.about_current li span{font-size: 14px;  font-family:Roboto;}
+
+@media screen and (max-width: 768px) {
+.about_content_title li span {font-size: 15px;}
+.about_current li span{font-size: 12px;}
+}
+
+/*css*/
+/* 回り込みを終了する定型表現。 */
+/*clearfix*/	
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*画像と文書を並べて表示時する*/
+  .inner{     
+	float: right;
+	font-family:sans-serif;
+}
+  .inner p{
+	float:left; 
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+   }
+.clearfix .post-member{
+	width:200px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+
+
+
+
+
+/* News & Events */
+
+.msr_newslist02 {
+  width: 100%;
+  margin-bottom:50px;
+}
+.msr_newslist02 li {
+  font-size: 14px;
+  background-color: #F3F3F3;
+list-style: none;
+}
+.msr_newslist02 li:nth-child(odd) {
+  background-color: #E6E6E6;
+}
+.msr_newslist02 li a {
+  box-sizing: border-box;
+  color: #000000;
+  display: table;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  width: 100%;
+}
+.msr_newslist02 li a:hover {
+  text-decoration: none;
+  background-color: #FDFDFD;
+}
+
+.msr_newslist02 li div {
+  display: table-cell;
+  width: 144px;
+}
+.msr_newslist02 li p {
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/* 時間の設定 */
+.msr_newslist02 li time {
+  display: table-cell;
+  vertical-align: top;
+  width: 90px;
+}
+
+/* カテゴリの設定 */
+.msr_newslist02 li .cat01,
+.msr_newslist02 li .cat02 {
+  background-color: #1B73BA;
+  border-radius: 1px;
+  color: #FFFFFF;
+  font-size: 9px;
+  padding: 0 2px;
+  text-align: center;
+  width: 50px;
+}
+.msr_newslist02 li .cat02 {
+  background-color: #0E3A5F;
+}
+
+
+	.col-member {width: 100%;}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  /*position: fixed;
+  top: 30px;
+  right: 30px;*/
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  top:20px;
+  right:20px;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  background-color:gainsboro;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-1395deg);
+  transform: translateY(10px) rotate(-1395deg);
+}
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(1395deg);
+  transform: translateY(-10px) rotate(1395deg);
+}
+
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
+}
+.style-nav ul li a:hover {
+  background: #e4e4e4;
+}
+.style-nav ul {
+	margin-top: 20px;
+}
+
+
+.site-header nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+
+
+
+/* mobile menu */
+/* mobile menu */
+@media only screen and (max-width: 768px){
+.header-change{display:none}
+	
+/*============
+nav
+=============*/
+
+	
+	
+}
+
+
+	@keyframes zoomUp {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+/*Tablet View*/
+
+@media (min-width: 768px){
+	
+	body {
+		max-width: 1024px;
+	}
+	
+	.header-change{height:30px;}
+	.header-change .style-nav{height:30px;margin-bottom:-3em;margin-right: -3em} 
+	
+	.header-change .style-logo  {float: left;margin-left: -3em;margin-bottom: -5em;margin-top:-1.em} 
+	
+	.hero{
+	margin-top:0px;
+/*    animation: zoomUp 10s linear 0s 1 normal both;*/
+	}
+
+	
+.text-box img{
+  left:25%;
+  width: 50%; 
+}
+	
+	.hero-title {
+		font-size: 4em;
+	  	letter-spacing: .05em;   
+	} 
+	
+	.header-change .style-nav ul li {
+		display: inline-block;
+		margin-bottom:30px;
+	}
+	
+	.style-nav ul {
+		text-align: center;
+	}
+	
+	h1 {
+		font-size: 40px;
+		margin-bottom: 90px;
+	}
+	
+	h2 {
+		margin-bottom: 16px;
+	}
+	
+	.col-md-one-half {
+		width: 50%; 
+	}
+	.col-member {width: 50%;}
+	.col {
+		float: left;
+		padding: 0px 7px 14px;
+	}
+
+	.post-slide .post-img img{
+		min-height:250px;
+	}
+	
+	
+	.image-round2{border-radius: 63%;  hight: 63.5%;  width: 63.5%;}
+
+	.info-box-tan {height:550px}
+	.info-box-dark {height:550px}
+
+	.acd-check{visibility: hidden;}
+
+	
+.style-nav .ul .style-flag-gainsboro { 
+	display:block;
+}
+.style-nav .style-flag-black { 
+	display:none;
+}
+	
+	
+.teachingclass {  
+	margin-left:40px;
+}	
+	
+.teaching_content{	/* Publication title */ 
+	margin-left:40px;
+	font-size: 16px;
+}
+.teaching_content ul li{	/* Publication title */ 
+	font-size: 15px;
+}
+
+
+
+
+.CV_content_title {
+	margin-left:60px;
+}
+
+.CV_content_table span, tr td, tr td span, tr td p{
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	font-size: 14px;
+	margin:0;
+}
+.CV_content_title span{
+	color:rgba(45,45,53,1.00);
+	font-family:Roboto;
+	font-size: 14px;
+}
+
+.map-info{
+	font-size:16px;
+	display: inline-block;
+	}
+.map-info span { 
+	font-size:16px; 
+	display: inline;
+}
+	
+.map-info-br{
+	display:inline;
+	height:0;
+}
+	
+}
+
+/*Desktop View*/
+
+@media (min-width: 1024px){
+	
+	body {max-width: 10200px;}
+ 
+/*
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img{
+  animation: zoomUp 10s linear 0s 1 normal both;  
+}
+	*/
+	
+	.header-change .col{height:10px;}
+ 
+	.hero-leadin span {display: inline;}
+	.hero-leadin {margin-bottom: 7.5%;}
+	.hero-title {margin-bottom: 7.5%;}
+	.hero-title span {display: inline;}
+	.style-logo  {float: left;margin-left: -1em;margin-bottom: -5em;margin-top:-0.2em}  
+	.site-change .style-nav {float: right;} 
+	.col-lg-one-fourth {width: 25%;}
+	.col-member {width: 25%;}
+	.post-slide .post-img img{min-height:260px;}
+
+	
+
+	
+	.image-round2{border-radius: 59%;  hight: 59%;  width: 59%;}
+	.info-box-tan {height:660px}
+	.info-box-dark {height:660px}
+	
+.post-member .post-description span {display: block;}
+}
+
+
+
+/* News */
+
+
+.info {
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  height: 15em;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+@media (min-width:768px) {
+  .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+}
+
+.info dd,
+.info dt {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: .5em;
+  padding-left: .5em
+}
+
+.info dt {
+  font-style: normal;
+  font-weight: initial;
+}
+
+@media (min-width:768px) {
+  .info dt {
+    width: 12.5em;
+    margin-bottom: .5em;
+    border-bottom: 1px dotted #343a40
+  }
+}
+
+.info dt:first-of-type {
+  padding-top: .5em;
+  border-top: 1px dotted #343a40
+}
+
+.info dt time {
+  margin-right: .5em
+  width: 10em;
+}
+
+.info dt span {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 8em;
+  margin-right: .5em;
+  padding: 0 .5em;
+  background-color: #009688;
+  color: #fff;
+  font-size: .8em;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.info time {
+  color: #adb5bd
+}
+
+.info dd {
+  margin-left: 0;
+  margin-bottom: .5em;
+  border-bottom: 1px dotted #343a40;
+  font-family:Roboto;
+}
+
+@media (min-width:768px) {
+  .info dd {
+    width: calc(100% - 12.5em)
+  }
+  .info dd:first-of-type {
+    padding-top: .5em;
+    border-top: 1px dotted #343a40
+  }
+}
+
+.info dd:nth-of-type(-n+3) {
+  position: relative
+}
+
+
+
+
