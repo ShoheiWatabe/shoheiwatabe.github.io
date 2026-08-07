@@ -1903,5 +1903,30 @@ nav
 }
 
 
+/* 見出し（p）の下余白をギュッと縮める */
+.teaching_content p {
+    margin-bottom: 3px;
+}
 
+/* リスト（ul）の上余白をなくす */
+.teaching_content ul {
+    margin-top: -0.5em;
+}
 
+.teaching_content .career-title {
+	margin-bottom: 8px;
+}
+
+.teaching_content ul.career-tags {
+	display: grid;
+	/* 画面幅に応じて最小200pxの列を自動で並べる */
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 6px 16px;
+	padding-left: 1.2em; /* 箇条書きポチの位置調整 */
+	margin-top: 0;
+}
+
+.teaching_content ul.career-tags li {
+	font-size: 0.85rem;
+	line-height: 1.4;
+}
